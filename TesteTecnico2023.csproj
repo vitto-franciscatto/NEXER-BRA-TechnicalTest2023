@@ -74,6 +74,12 @@
     <Compile Include="Forms\AddVehicle.Designer.cs">
       <DependentUpon>AddVehicle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TravelAutonomyResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TravelAutonomyResult.Designer.cs">
+      <DependentUpon>TravelAutonomyResult.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TravelAutonomyResult.resx">
+      <DependentUpon>TravelAutonomyResult.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

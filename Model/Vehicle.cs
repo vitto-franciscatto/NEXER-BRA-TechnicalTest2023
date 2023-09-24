@@ -17,6 +17,24 @@
 
         public abstract string Type();
 
+        public double GetTravelCost(double distance, double weight, double fuelPrice)
+        {
+            double fuel = 0d;
+
+            if(weight < this.WeightSupported)
+            {
+                fuel = distance / this.Autonomy;
+            }
+            else
+            {
+                int travels = (int)Math.Ceiling(weight / this.WeightSupported);
+
+                fuel = (distance / this.Autonomy) * travels;
+            }
+
+            return fuel * fuelPrice;
+        }
+
         public virtual void showInfo()
         {
             Console.WriteLine($"Marca: {Brand}, Modelo: {ModelName}, Rodas: {Wheels}");
