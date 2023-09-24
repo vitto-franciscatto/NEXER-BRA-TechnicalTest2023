@@ -35,12 +35,14 @@
         {
             switch (_type.ToLower())
             {
-                case "Carro":
+                case "carro":
                     return new Car();
-                case "Moto":
+                case "moto":
                     return new Motorcycle();
-                case "Caminhão":
+                case "caminhão":
                     return new Truck();
+                case "avião":
+                    return new Airplane();
                 default:
                     return new Car();
             }
