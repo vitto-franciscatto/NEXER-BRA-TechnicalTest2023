@@ -10,6 +10,7 @@
     {
         public string ModelName { get; set; }
         public string Brand { get; set; }
+        public string Fuel { get; set; }
         public int Wheels { get; set; }
         public double WeightSupported { get; set; }
         public double Autonomy { get; set; }

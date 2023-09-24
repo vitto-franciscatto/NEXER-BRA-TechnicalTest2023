@@ -24,6 +24,7 @@
             listData.Columns.Add("Tipo");
             listData.Columns.Add("Marca");
             listData.Columns.Add("Modelo");
+            listData.Columns.Add("Combustível");
             listData.Columns.Add("Rodas");
             listData.Columns.Add("Autonomia");
             listData.Columns.Add("Peso Suportado (KG)");
@@ -32,7 +33,7 @@
 
             foreach (var item in Data.VEHICLES)
             {
-                listData.Items.Add(new ListViewItem(new string[] {item.Type(), item.Brand, item.ModelName, item.Wheels.ToString(), item.Autonomy.ToString(), item.WeightSupported.ToString() }));
+                listData.Items.Add(new ListViewItem(new string[] {item.Type(), item.Brand, item.ModelName, item.Fuel, item.Wheels.ToString(), item.Autonomy.ToString(), item.WeightSupported.ToString() }));
             }
 
             listData.Columns[0].Width = -1;

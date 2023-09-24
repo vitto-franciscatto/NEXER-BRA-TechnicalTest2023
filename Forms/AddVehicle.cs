@@ -21,6 +21,7 @@
         private void AddVehicle_Load(object sender, EventArgs e)
         {
             cmbType.DataSource = Data.VEHICLE_TYPES;
+            cmbFuel.DataSource = Data.FUEL_TYPES;
             txtWheels.Text = "0";
             txtKMs.Text = "0";
         }
@@ -31,6 +32,7 @@
 
             vehicle.Brand           = txtModel.Text;
             vehicle.ModelName       = txtModelName.Text;
+            vehicle.Fuel            = cmbFuel.SelectedValue.ToString();
             vehicle.Wheels          = Convert.ToInt32(txtWheels.Text);
             vehicle.Autonomy        = Convert.ToDouble(txtKMs.Text);
             vehicle.WeightSupported = Convert.ToDouble(txtWeight.Text);
