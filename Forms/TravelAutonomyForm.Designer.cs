@@ -38,61 +38,62 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(182, 121);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCalculate.Location = new System.Drawing.Point(162, 97);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(112, 35);
+            this.btnCalculate.Size = new System.Drawing.Size(100, 28);
             this.btnCalculate.TabIndex = 3;
             this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 32);
+            this.label1.Location = new System.Drawing.Point(28, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 20);
+            this.label1.Size = new System.Drawing.Size(93, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Distância (KM)";
             // 
             // txtDistance
             // 
-            this.txtDistance.Location = new System.Drawing.Point(167, 29);
-            this.txtDistance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDistance.Location = new System.Drawing.Point(148, 23);
+            this.txtDistance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDistance.Name = "txtDistance";
-            this.txtDistance.Size = new System.Drawing.Size(148, 26);
+            this.txtDistance.Size = new System.Drawing.Size(132, 22);
             this.txtDistance.TabIndex = 0;
             // 
             // txtWeight
             // 
-            this.txtWeight.Location = new System.Drawing.Point(167, 71);
-            this.txtWeight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtWeight.Location = new System.Drawing.Point(148, 57);
+            this.txtWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(148, 26);
+            this.txtWeight.Size = new System.Drawing.Size(132, 22);
             this.txtWeight.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 74);
+            this.label2.Location = new System.Drawing.Point(12, 59);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 20);
+            this.label2.Size = new System.Drawing.Size(127, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Peso da Carga (KG)";
             // 
             // TravelAutonomyForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 255);
+            this.ClientSize = new System.Drawing.Size(418, 204);
             this.Controls.Add(this.txtWeight);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDistance);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCalculate);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TravelAutonomyForm";
             this.Text = "TravelAutonomyForm";
             this.ResumeLayout(false);

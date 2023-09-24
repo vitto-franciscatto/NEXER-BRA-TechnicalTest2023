@@ -10,11 +10,30 @@
     {
         public string ModelName { get; set; }
         public string Brand { get; set; }
+        public string Fuel { get; set; }
         public int Wheels { get; set; }
         public double WeightSupported { get; set; }
         public double Autonomy { get; set; }
 
         public abstract string Type();
+
+        public double GetTravelCost(double distance, double weight, double fuelPrice)
+        {
+            double fuel = 0d;
+
+            if(weight < this.WeightSupported)
+            {
+                fuel = distance / this.Autonomy;
+            }
+            else
+            {
+                int travels = (int)Math.Ceiling(weight / this.WeightSupported);
+
+                fuel = (distance / this.Autonomy) * travels;
+            }
+
+            return fuel * fuelPrice;
+        }
 
         public virtual void showInfo()
         {
